@@ -1,0 +1,25 @@
+ALGORITHM Project
+VAR
+    words := 0
+    vowels := 0
+    char := 0
+BEGIN
+    READ(length)
+    READ(words)
+    READ(vowels)
+    READ(char)
+    vowel_set := ("a","e","i","o","u","A","E","I","O","U")
+    char_set := ("b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z","B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z",)
+
+
+
+    IF sentence endswith (".") THEN
+        length = length of the sentence
+    ELSE_IF vowels in vowel_set THEN
+       vowels:= sum(for vowels in sentence)
+    ELSE_IF char in sentence is words THEN
+        words = sum(for char in sentence)
+    ELSE
+        Write("Error: The sentence must end with a period.")
+    END
+
