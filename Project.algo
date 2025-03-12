@@ -21,5 +21,10 @@ BEGIN
         words = sum(for char in sentence)
     ELSE
         Write("Error: The sentence must end with a period.")
+
+    print(length)
+    print(words)
+    print(vowels)
+    print(char)
     END
 
